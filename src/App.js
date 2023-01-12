@@ -5,15 +5,16 @@ import axios from 'axios';
 function App() {
   // var axios = require('axios');
   const handleClick = ()=> {
-    const key="32d17419189d78c1820e021b33895a55278b3e670f1938c9";
-    const sid="crewscale1";
-    const token="e5229432bed4ac6e66de25fa5cece7b2970ab48683b90354";
+    const key="000c9171cbaec798c7182a641c0b92a93b2b3bf6e1499e99";
+    // const sid="crewscale1";
+    const token="7da41074d3ad0cf1cf2ad6a044407ee1597af45ce4e8447d";
     const from="09742870520";
     const to="08074136872";
     const callerId="09513886363";
     const formUrlEncoded = x =>Object.keys(x).reduce((p, c) => p + `&${c}=${encodeURIComponent(x[c])}`, '')
 
-    const url="https://"+key+":"+token+"@api.exotel.com/v1/Accounts/"+sid+"/Calls/connect";
+    // const url="https://"+key+":"+token+"@api.exotel.com/v1/Accounts/"+sid+"/Calls/connect";
+    const url="https://api.exotel.com/v1/Accounts/crewscale1/Calls/connect";
     // const url = 'https://32d17419189d78c1820e021b33895a55278b3e670f1938c9:e5229432bed4ac6e66de25fa5cece7b2970ab48683b90354@api.exotel.com/v1/Accounts/crewscale1/Calls/connect.json';
     axios.post(url,
       formUrlEncoded({
@@ -26,7 +27,8 @@ function App() {
         withCredentials: true,
         headers: {
             "Accept":"application/x-www-form-urlencoded",
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/x-www-form-urlencoded",
+            'Authorization': 'Basic ' + window.btoa(key + ':' + token)
         }
       },
       )
