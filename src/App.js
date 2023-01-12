@@ -8,10 +8,10 @@ function App() {
     // const key="32d17419189d78c1820e021b33895a55278b3e670f1938c9";
     // const sid="crewscale1";
     // const token="e5229432bed4ac6e66de25fa5cece7b2970ab48683b90354";
-    const from="09742870520";
-    const to="08074136872";
-    const callerId="09513886363";
-    const formUrlEncoded = x =>Object.keys(x).reduce((p, c) => p + `&${c}=${encodeURIComponent(x[c])}`, '')
+    // const from="09742870520";
+    // const to="08074136872";
+    // const callerId="09513886363";
+    // const formUrlEncoded = x =>Object.keys(x).reduce((p, c) => p + `&${c}=${encodeURIComponent(x[c])}`, '')
 
     // const url="https://"+key+":"+token+"@api.exotel.in/v1/Accounts/"+sid+"/Calls/connect";
     // const url = 'https://32d17419189d78c1820e021b33895a55278b3e670f1938c9:e5229432bed4ac6e66de25fa5cece7b2970ab48683b90354@api.exotel.com/v1/Accounts/crewscale1/Calls/connect.json';
